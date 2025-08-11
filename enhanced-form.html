@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>showcase : lists,tables ,media </title>
+    </head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Showcase: Lists, Tables, Media & Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        section { margin-bottom: 40px; }
+        table { border-collapse: collapse; width: 60%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #f0f0f0; }
+        fieldset { margin-bottom: 20px; }
+        legend { font-weight: bold; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea { margin-top: 5px; width: 100%; max-width: 400px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Page Showcase</h1>
+        <p>This page demonstrates lists, tables, media, and a complete HTML5 form.</p>
+    </header>
+
+    <section>
+        <h2>Lists</h2>
+        <h3>Favorite Fruits (Ordered List)</h3>
+        <ol>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ol>
+        <h3>Hobbies (Unordered List)</h3>
+        <ul>
+            <li>Reading</li>
+            <li>Swimming</li>
+            <li>Photography</li>
+        </ul>
+        <h3>Steps to Bake a Cake (Description List)</h3>
+        <dl>
+            <dt>Step 1</dt>
+            <dd>Gather ingredients</dd>
+            <dt>Step 2</dt>
+            <dd>Mix ingredients</dd>
+            <dt>Step 3</dt>
+            <dd>Bake in oven</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Table</h2>
+        <table>
+            <caption>Weekly Activity Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Activity</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Jogging</td>
+                    <td>30 mins</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Swimming</td>
+                    <td>1 hour</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Reading</td>
+                    <td>2 hours</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Media</h2>
+        <h3>Sample Image</h3>
+        <img src="https://via.placeholder.com/300x150.png?text=Sample+Image" alt="Sample Image" width="300">
+        <h3>Sample Audio</h3>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <h3>Sample Video</h3>
+        <video width="320" height="180" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required minlength="2" maxlength="50">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select...</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select>
+
+                <label>Favorite Hobby:</label>
+                <input type="radio" id="hobby_reading" name="hobby" value="Reading" required>
+                <label for="hobby_reading">Reading</label>
+                <input type="radio" id="hobby_swimming" name="hobby" value="Swimming">
+                <label for="hobby_swimming">Swimming</label>
+                <input type="radio" id="hobby_photography" name="hobby" value="Photography">
+                <label for="hobby_photography">Photography</label>
+
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    Subscribe to newsletter
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" maxlength="300" placeholder="Your feedback..."></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
